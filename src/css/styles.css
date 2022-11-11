@@ -1,0 +1,336 @@
+/*  Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Russo+One&family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  viewport-fit: 90%;
+
+}
+
+h1 {
+  position: relative;
+  color: #fff;
+  font: 900 40px Montserrat;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  position: relative;
+  color: #0d69d1;
+  font: 900 30px Montserrat;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+h5 {
+  position: relative;
+  color: rgb(29, 29, 29);
+  font: 600 20px Montserrat;
+}
+@media screen and (max-width: 1440px) {
+  .leomega{
+    transform: translate(500px, 120px);
+    width: 460px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 80vw;
+  }
+
+  .stats {
+    height: 26vmin;
+    width: 26vmin;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 60vw;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .stats {
+    width: calc(50% - 40px);
+    height: 20vmin;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    gap: 15px;
+  }
+
+  .stats {
+    width: 50%;
+    height: 20vmin;
+    font-size: 8px;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  padding-top: 10px;
+  width: 100%;
+  background-color: #000933;
+}
+
+.contribution {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  color: #0d69d1;
+  font-size: 40px;
+
+}
+
+#AboutUs{
+  height: 650px;
+  width: auto;
+}
+
+.textmain {
+  z-index: -2;
+  position: absolute;
+}
+
+.description{
+  color: rgb(90, 90, 90);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+/*
+#leoimg {
+  display: flex;
+  perspective: 25px;
+  z-index: 1;
+}
+
+#inner {
+  width: 500px;
+  height: auto;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+} */
+
+.main-content {
+  text-align: center;
+  text-transform: uppercase;
+  scroll-snap-type: y mandatory;
+  position: relative;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.hover .word {
+  cursor: pointer;
+}
+
+.concept {
+  position: relative;
+  padding: 6em;
+  height: 800px;
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+
+.concept:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), transparent);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.leoimg {
+  z-index: 1;
+  display: grid;
+  grid: repeat(3, 1fr)/ repeat(3, 1fr);
+  /* background: yellow;
+  padding: 8em;
+  background: url("https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/desert.jpg") no-repeat center center / cover; */
+}
+
+.leomega {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin-top: 0px;
+  transition: 0.5s ease;
+  z-index: -5;
+  opacity: 0.25;
+}
+
+.leoimg .hover {
+  z-index: 1;
+}
+
+.leoimg .hover-1:hover~.leomega {
+  left: 30px;
+  margin-top: -10px;
+}
+
+.leoimg .hover-2:hover~.leomega {
+  margin-top: -10px;
+}
+
+.leoimg .hover-3:hover~.leomega {
+  right: 30px;
+  margin-top: -10px;
+}
+
+.leoimg .hover-4:hover~.leomega {
+  left: 30px;
+}
+
+.leoimg .hover-6:hover~.leomega {
+  right: 20px;
+}
+
+.leoimg .hover-7:hover~.leomega {
+  left: 30px;
+  margin-top: 10px;
+}
+
+.leoimg .hover-8:hover~.leomega {
+  margin-top: -20px;
+}
+
+.leoimg .hover-9:hover~.leomega {
+  right: 30px;
+  margin-top: -20px;
+}
+
+#thirdScreenHome {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  background-color: #002133;
+}
+
+.wrapper {
+  display: flex;
+  position: absolute;
+  width: 40vw;
+  justify-content: space-around;
+  gap: 100px;
+}
+
+.stats {
+  width: 25vmin;
+  height: 18vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.8em 0;
+  position: relative;
+  font-size: 16px;
+  border-radius: 0.5em;
+  border-bottom: 5px solid #1881f9;
+}
+
+i {
+  color: #1881f9;
+  font-size: 1em;
+  text-align: center;
+}
+
+span.num {
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 3em;
+  padding-top: 0.3em;
+}
+
+span.text {
+  color: #03a3ec;
+  font-size: 1em;
+  text-align: center;
+  pad: 0.7em 0;
+  font-weight: 400;
+  line-height: 0;
+}
+
+#fourthScreenHome {
+  /* display: flex; */
+  height: 1000px;
+  /* justify-content: center; */
+  background-color: #000933;
+}
+
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+}
+
+.Cards {
+  margin-top: 0;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+.bg-ash {
+  background-color: rgb(47, 47, 48);
+}
+
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: baseline;
+}
+
+.viewMore {
+  text-transform: uppercase;
+  border: 1px solid #0099ff;
+  color: white;
+  background-color: #000933;
+  border-radius: 10px;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 30px 2px;
+  cursor: pointer;
+}
+
+.viewMore:hover {
+  background-color: #0099ff;
+  transition: 0.3s ease-in-out;
+}
