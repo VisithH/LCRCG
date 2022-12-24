@@ -21,7 +21,7 @@ h2 {
   position: relative;
   color: #0d69d1;
   font: 900 30px Montserrat;
-  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
 
 h5 {
@@ -29,14 +29,22 @@ h5 {
   color: rgb(29, 29, 29);
   font: 600 20px Montserrat;
 }
-@media screen and (max-width: 1440px) {
+
+@media screen and (max-width: 2560px) {
   .leomega{
-    transform: translate(500px, 120px);
+    transform: translate(110%, 120px);
     width: 460px;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
+  .leomega{
+    transform: translate(110%, 120px);
+    width: 460px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
   .wrapper {
     width: 80vw;
   }
@@ -46,32 +54,84 @@ h5 {
     width: 26vmin;
     font-size: 12px;
   }
+  #AboutUs{
+    height: 610px;
+  }
+  .leomega{
+    transform: translate(80%, 120px);
+    width: 400px;
+  }
+  #fourthScreenHome{
+    height: 830px;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .wrapper {
     width: 60vw;
-    flex-wrap: wrap;
-    gap: 30px;
   }
 
   .stats {
     width: calc(50% - 40px);
     height: 20vmin;
-    font-size: 14px;
+    font-size: 10px;
+  }
+  #AboutUs{
+    height: 510px;
+  }
+
+  #fourthScreenHome{
+    height: 900px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 426px) {
   .wrapper {
     gap: 15px;
   }
 
+  .fa-bars{
+    color: #fff;
+    scale: 75%;
+  }
+
   .stats {
-    width: 50%;
+    width: 10%;
     height: 20vmin;
     font-size: 8px;
   }
+
+  #AboutUs{
+    height: 810px;
+  }
+
+  #fourthScreenHome{
+    height: 900px;
+  }
+  .site-logo{
+    scale: 75%;
+  }
+
+}
+
+.white-bar{
+  color: #fff;
+  font-size: 30px;
+}
+
+.fa-xmark{
+  color: rgb(149, 149, 149);
+  font-size: 30px;
+  -ms-overflow-style: none;
+  overflow: hidden;
+}
+
+.topBar {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .sticky {
@@ -92,12 +152,11 @@ h5 {
 }
 
 #AboutUs{
-  height: 650px;
   width: auto;
 }
 
 .textmain {
-  z-index: -2;
+  /* z-index: -2; */
   position: absolute;
 }
 
@@ -148,7 +207,7 @@ h5 {
   content: "";
   position: absolute;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   top: 0;
   left: 0;
   background: radial-gradient(rgba(0, 0, 0, 0.3), transparent);
@@ -167,7 +226,7 @@ h5 {
 
 .leomega {
   position: absolute;
-  margin: auto;
+  margin: 0;
   left: 0;
   right: 0;
   margin-top: 0px;
@@ -271,7 +330,6 @@ span.text {
 
 #fourthScreenHome {
   /* display: flex; */
-  height: 1000px;
   /* justify-content: center; */
   background-color: #000933;
 }
@@ -333,4 +391,31 @@ span.text {
 .viewMore:hover {
   background-color: #0099ff;
   transition: 0.3s ease-in-out;
+}
+
+.largeCardText{
+  font-size: 19.1px;
+}
+
+#Footer{
+  background-color: #0d69d1;
+  width: 100%;
+  height: 150px;
+  padding: 30px;
+}
+
+#FooterText {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  color: #b4b2b2;
+  font-weight: 400;
+  width: 100%;
+  height: 20px;
+  font-size: 15px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
 }

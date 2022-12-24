@@ -84,7 +84,7 @@
 }
 
 .social-button--linkedin::after {
-    background: #0077b5;
+    background: #000933;
 }
 
 .social-button--github {
@@ -92,7 +92,7 @@
 }
 
 .social-button--github::after {
-    background: #6124f0;
+    background: #000933;
 }
 
 .social-button--discord {
@@ -100,7 +100,7 @@
 }
 
 .social-button--discord::after {
-    background: #3a09ad;
+    background: #000933;
 }
 
 .social-button--calendar {
@@ -111,12 +111,16 @@
     background: rgb(0, 102, 255);
 }
 
+.social-button--bars {
+    color: #3a09ad;
+}
+
 .social-button--youtube {
     color: #c90909;
 }
 
 .social-button--youtube::after {
-    background: #c90909;
+    background: #000933;
 }
 
 .location {
@@ -148,7 +152,7 @@
 }
 
 .social-button--twitter::after {
-    background: #55acee;
+    background: #000933;
 }
 
 .social-button--instagram {

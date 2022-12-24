@@ -72,13 +72,34 @@ a:hover {
   position: relative;
   top: 0;
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
   position: absolute;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 2560px) {
   .site-navbar {
-    padding-top: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .site-navbar {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-navbar {
+    padding-top: 0.85rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .site-navbar {
+    padding-top: 1rem;
     padding-bottom: 0.5rem;
   }
 }
@@ -106,7 +127,7 @@ a:hover {
   /* font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 768px) {
   .site-navbar .site-logo {
     float: left;
     position: relative;
@@ -571,7 +592,7 @@ a:hover {
   padding-bottom: 0px !important;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 768px) {
   .sticky-wrapper .shrink {
     padding-top: 30px !important;
     padding-bottom: 30px !important;
